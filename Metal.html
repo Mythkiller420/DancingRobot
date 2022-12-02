@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metal Project</title>
+<style>
+
+.stage {
+top: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top: 0px;
+width: 90%;
+height: 800px;
+background: lightblue  ;
+border-style: solid;
+border-width: 5px;
+border-color: black;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+}
+
+.wholebody {
+background: lightblue;
+
+/* To hide uncomment this*/
+/* background: #ddd; */
+
+margin-left: 400px;
+margin-top: -20px;
+width: 240px;
+height: 400px;
+margin-top: 160px;
+animation: geeks 30s infinite;animation-iteration-count: 1;
+}
+
+@keyframes geeks {
+0% {
+margin-left: 50%;
+
+}
+4.1%{
+    margin-left: 12%;
+
+}
+8.2%{
+    margin-left: 50%;
+  
+}
+
+
+12.3% {
+    margin-left: 12%;
+    
+}
+16.4%{
+    margin-left: 12%;
+    
+}
+40%{
+    margin-left: 12%;
+
+}
+44%{
+    margin-left: 82%;
+
+}
+
+47.9%{
+    margin-left: 35%;
+
+}
+51.0%{
+    margin-left: 82%;
+
+}
+56.6%{
+    margin-left: 35%;
+
+}
+83.3%{
+   margin-left: 35%;
+}
+
+87.9%{
+    margin-left:  82%;
+
+}
+92.0%{
+    margin-left: 35%;
+
+}
+96.1%{
+    margin-left: 82%;
+
+}
+100%{
+    margin-left: 35%;
+
+}
+}
+@keyframes rightarm {
+    0%{ 
+        transform: rotate(0deg);
+    }  
+    16%{
+        transform: rotate(-180deg);
+    }
+    19.0%{
+        transform: rotate(-180deg);
+
+    }
+    21.0%{
+        transform: rotate(0deg);
+    }
+    24.0%{
+        transform: rotate(-180deg);
+    }
+    34.0%{
+        transform: rotate(0deg);
+    }
+    44.0%{
+        transform: rotate(-180deg);
+    }
+    54.0%{
+        transform: rotate(0deg);
+    }
+    77.5%{
+        transform: rotate(-180deg);
+
+    }
+    88.5%{
+        transform: rotate(0deg);
+
+    }
+    98.5%{
+        transform: rotate(-180deg);
+
+    }
+}
+@keyframes Leftarm {
+    0%{
+        transform: rotate(0deg);
+    }  
+    16%{
+        transform: rotate(0deg);
+    }
+    19.0%{
+        transform: rotate(180deg);
+
+    }
+    21.0%{
+        transform: rotate(0deg);
+    }
+    24.0%{
+        transform: rotate(180deg);
+    }
+    34.0%{
+        transform: rotate(0deg);
+    }
+    44.0%{
+        transform: rotate(180deg);
+    }
+    54.0%{
+        transform: rotate(0deg);
+    }
+    67.5%{
+        transform: rotate(180deg);
+
+    }
+    77.5%{
+        transform: rotate(0deg);
+
+    }
+    88.5%{
+        transform: rotate(180deg);
+
+    }
+    98.5%{
+        transform: rotate(0deg);
+
+    }
+}
+@keyframes Leftleg {
+    0%{
+        transform: rotate(-60deg);
+    }  
+    16%{
+        transform: rotate(0deg);
+    }
+    19.0%{
+        transform: rotate(-60deg);
+
+    }
+    21.0%{
+        transform: rotate(0deg);
+    }
+    24.0%{
+        transform: rotate(-60deg);
+    }
+    34.0%{
+        transform: rotate(0deg);
+    }
+    44.0%{
+        transform: rotate(-60deg);
+    }
+    54.0%{
+        transform: rotate(0deg);
+    }
+    77.5%{
+        transform: rotate(-60deg);
+
+    }
+    88.5%{
+        transform: rotate(0deg);
+
+    }
+    98.5%{
+        transform: rotate(-60deg);
+
+    }
+}
+
+
+.head {
+background: coral;
+width: 50%;
+height: 60px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+background-image: url(/image/cover2.jpg);
+background-size: cover;
+}
+.body {
+background: black;
+width: 50%;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10%;
+display: inline-block;
+
+}
+.Larm{
+display: inline-block;
+background: black;
+width: 30px;
+height: 200px;
+border-radius: 10%;
+animation: Leftarm 24s;
+animation-iteration-count: 1;
+transform-origin: 100% 0%; 
+animation-delay: 5s;
+}
+.Rarm{
+display: inline-block;
+background: black;
+width: 30px;
+height: 200px;
+border-radius: 10%;
+animation:rightarm 24s;
+animation-iteration-count: 1;
+transform-origin: 0% 0%; 
+animation-delay: 5s;
+}
+.Lleg{
+display: inline-block;
+background: blue;
+width: 40px;
+height: 125px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10%;
+animation:Leftleg 30s;
+animation-iteration-count: 1;
+transform-origin: 0% 0%;
+animation-delay: 5s;
+}
+.Rleg{
+display: inline-block;
+background: blue;
+width: 40px;
+height: 125px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10%;
+}
+</style>
+</head>
+<body>
+<video  style="margin-left: 500px;" width="320" height="240" controls>
+<source src="/image/IMG_2607.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="stage">
+
+<div class="wholebody">
+<div  class="head">
+</div>
+<div class="Larm"></div>
+
+<div class="body">
+</div>
+<div class="Rarm"></div>
+<div class="Rleg"></div>
+<div class="Lleg"></div>
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>
